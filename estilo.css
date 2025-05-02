@@ -1,0 +1,384 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  text-decoration: none;
+}
+header{
+  text-align: center;
+  background-color: #031C3C;
+  overflow: hidden;
+}
+header .logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  margin-top: 2px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 5px;
+}
+.logo .seta{
+  z-index: 1;
+  width: 17%;
+transition: all 0.8s;
+  padding-right: 8px;
+}
+.virou{
+    transform: rotateY(160deg); 
+    
+}
+.texto{
+  color: #fff;
+  margin-top: 5rem;
+}
+.texto h1{
+  font-size: 3rem;
+}
+.texto h1 span{
+  color:#1ABEF5 ;
+}
+.texto .p1{
+font-weight: 400;
+}
+.texto .description{
+  margin-bottom: 18px;
+font-weight: 300;
+font-size: 18px;
+}
+.texto .botoes .partc{
+ margin-right: 31px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #1ABEF5;
+  padding: 11px 20px;
+  border-radius: 40px;
+}
+.texto .botoes .sessao{
+  margin-left: 31px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+ border: 2px solid #1ABEF5;
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+.texto .botoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .imgPrincipal{
+  margin-top: -50px;
+  margin-left: -12px;
+  width: 100%;
+}
+
+ /* BARRA */
+ 
+ nav{
+   transition: all 0.8s;
+   left: 100%;
+   background-color: #031C3C;
+   position: fixed;
+   top: 0;
+   height: 800px;
+   width: 100%;
+ }
+ nav h1{
+   text-align: center;
+   font-size: 3rem;
+   margin-top: 50px;
+   margin-bottom: -100px;
+ }
+nav ul{
+  list-style: none;
+  text-align: center;
+  margin-top: 12rem;
+}
+nav ul li{
+  font-size: 25px;
+  background-color: #1ABEF5;
+  border-radius: 14px;
+  padding: 10px 0px;
+  width: 70%;
+  margin-left: 60px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Courier New;
+  margin-top: 3rem;
+}
+.ativo{
+  left: 0;
+}
+/* FIM MENU */
+
+/* SERVICES */
+
+.services{
+  padding-bottom: 10rem;
+  color: #fff;
+  text-align: center;
+  background-color:#010C20 ;
+}
+.services h1{
+  padding: 0 5px;
+  padding-top: 10rem;
+  font-size: 3.5rem;
+}
+.services h1 span{
+  color: #1ABEF5;
+}
+ .cards{
+  margin-top: 5rem;
+}
+.cards .card{
+  padding-bottom: 25px;
+  background-color: #031C3C;
+  width: 80%;
+  margin-top: 5rem;
+  margin-left: 38px;
+  border-radius: 20px;
+  transition: all 0.8s;
+}
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 15px 15px 20px 5px #0d9fc7;
+}
+ .card h1{
+  margin-top: -150px;
+  font-size: 2.2rem;
+}
+.card h1 span{
+  color:#1ABEF5 ;
+}
+.card p{
+  font-size: 19px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.card a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1ABEF5;
+  padding: 14px 70px;
+  border-radius: 35px;
+}
+
+/* FIIQE CALADO! */
+
+.fiqueCalado{
+  padding-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+  background-color: #031C3C;
+}
+.fiqueCalado h1{
+  padding-top: 50px;
+  font-size: 3.5rem;
+}
+.fiqueCalado h1 span{
+  color: #1ABEF5;
+}
+.fiqueCalado p{
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.fiqueCalado a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #1ABEF5;
+  padding: 14px 70px;
+  border-radius: 35px;
+}
+.fiqueCalado img{
+  animation: flutuante 15s infinite linear;
+  width: 82%;
+  margin-top: 50px;
+  box-shadow: 10px 10px 15px 10px #1ABEF5;
+  border-top-left-radius: 130px;
+  border-top-right-radius: 130px;
+  border-bottom-right-radius: 130px;
+  border-bottom-left-radius:130px;
+}
+@keyframes flutuante{
+  0%{
+    transform: scale(1.1);
+  }
+  10%{
+    transform: scale(1);
+  }
+  20%{
+    transform: scale(1.1)
+  }
+  30%{
+    transform: scale(1)
+  }
+  40%{
+    transform: scale(1.1)
+  }
+  50%{
+    transform: scale(1)
+  }
+  60%{
+    transform: scale(1.1);
+  }
+  70%{
+    transform: scale(1)
+  }
+  80%{
+    transform: scale(1.1);
+  }
+  90%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+
+.fiqueCalado .Areas h2{
+  font-size:3.1rem;
+  margin-top: 8rem;
+}
+.fiqueCalado .Areas h2 span{
+  color: #1ABEF5;
+}
+.fiqueCalado .Areas .cont{
+  text-align: left;
+  padding-left: 5px;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+.fiqueCalado .barras{
+  margin-top: 120px;
+  margin-bottom: -20px;
+}
+
+.fiqueCalado .Areas .BarraAqua{
+  background-color:#1ABEF5;
+  width: 50%;
+  padding: 20px 10px;
+}
+.fiqueCalado .Areas .BarraBranca{
+  background-color:#fff;
+margin-top: -40px;
+  width: 50%;
+  margin-left: 50%;
+  padding: 20px 10px;
+}
+
+.fiqueCalado .Areas .cont h3{
+  text-align: left;
+  font-family: Courier New;
+  font-size: 2.8rem;
+  margin-top: 10rem;
+  margin-bottom: 3.8rem;
+}
+.fiqueCalado .Areas  h3 span{
+  font-family: Courier New;
+  color: #1ABEF5;
+}
+.fiqueCalado .cont p{
+  font-weight: 300;
+}
+.fiqueCalado .cont p span{
+  font-weight: bold;
+}
+.fiqueCalado .Areas a{
+  text-align: center;
+  padding: 15px 120px;
+  color: #fff;
+  border-radius: 20px;
+  margin-left: 8%;
+}
+
+ /* COMO A LUA PODE AJUDAR  */
+
+.Services .segundo-services-h1{
+  font-size: 3.8rem;
+}
+
+ /* COMENTAÁRIOS DE PESSOAS */
+ 
+ .Pessoas{
+   color: #fff;
+   text-align: center;
+  padding-top: 10rem; 
+  background-color: #010C20;
+  padding-bottom: 8rem;
+ }
+ .Pessoas h1{
+   font-size: 2.8rem;
+ }
+ .Pessoas p{
+   font-weight: 300;
+   color: #1ABEF5;
+   font-size: 19px;
+ }
+
+ .Pessoas .cards .card img{
+   border: 5px solid #1ABEF5;
+   border-radius: 100px;
+   width: 60%;
+ }
+ .Pessoas .card h1{
+   font-size: 1.8rem;
+   font-family: Arial;
+   padding-top: 150px;
+ }
+ .Pessoas .card p{
+   font-size: 17px;
+   font-weight: 500;
+ }
+ 
+ footer{
+  padding-top: 60px;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #031C3C;
+}
+
+footer h1{
+ text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 35px;
+}
+
+footer .icon{
+  width: 40px;
+}
+
+footer .temas{
+  padding-left: 6px;
+}
+
+ footer .temas h2{
+   padding-top: 20px;
+   font-size: 40px;
+}
+
+footer ul li{
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 300;
+}
+
+
+footer h3{
+  padding-top: 29px;
+}
+
+footer h3 span{
+  color: #1ABEF5;
+}
+
+
